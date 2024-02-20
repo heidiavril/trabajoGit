@@ -12,6 +12,12 @@
     src: url(fuentes/Dream\ Orphans.otf);
 }
 
+h1{
+    font-family: dream;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 100;
+}
 
 /* HEADER */
 
@@ -55,4 +61,29 @@ figure{
 
 figure img{
     width: 100%;
+}
+
+
+/* SECTION */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+section h1{
+    width: 80%;
+}
+
+section div{
+    display: flex;
+    width: 100%;
+    spa
+}
+
+section div article{
+    width: 33%;
 }
