@@ -2,6 +2,19 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: garet;
+    src: url(fuentes/Garet-Book.ttf);
+}
+
+@font-face {
+    font-family: dream;
+    src: url(fuentes/Dream\ Orphans.otf);
+}
+
+
+/* HEADER */
+
 header{
     display: flex;
     background-color: rgb(163, 17, 17);
@@ -11,4 +24,35 @@ header{
 img{
     margin-bottom: -2.2em;
     mix-blend-mode: multiply;
+}
+
+
+/* NAV */
+
+nav{
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-left: 0.5em;
+}
+
+nav a{
+    font-family: garet;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(116, 14, 14);
+    font-size: 1.8em;
+    letter-spacing: -0.05em;
+}
+
+
+/* FIGURE */
+
+figure{
+    width: 100%;
+}
+
+figure img{
+    width: 100%;
 }
