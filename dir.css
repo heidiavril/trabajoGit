@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: rgb(163, 17, 17);
+    justify-content: center;
+}
+
+img{
+    margin-bottom: -2.2em;
+    mix-blend-mode: multiply;
+}
