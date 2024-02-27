@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: garet;
+    src: url(fuentes/Garet-Book.ttf);
+}
+
+@font-face {
+    font-family: dream;
+    src: url(fuentes/Dream\ Orphans.otf);
+}
+
+h1{
+    font-family: garet;
+    letter-spacing: -0.06em;
+    font-size: 2.7em;
+    font-weight: 600;
+}
+
+main{
+    margin-top: 2em;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    background-color: rgb(163, 17, 17);
+    justify-content: center;
+}
+
+img{
+    margin-bottom: -2.2em;
+    mix-blend-mode: multiply;
+}
+
+
+/* NAV */
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 2em;
+}
+
+nav a{
+    font-family: garet;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(116, 14, 14);
+    font-size: 1.8em;
+    letter-spacing: -0.05em;
+    margin-right: 0.8em;
+}
+
+/* ARTICLE */
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#titulo{
+    width: 100%;
+    text-align: left;
+}
+
+/* FIGURE */
+
+figure{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+figure img{
+    margin-top: -2em;
+    width: 49%;
+}
+
+figcaption{
+    width: 45%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-family: garet;
+}
+
+figcaption h1{
+    font-size: 2em;
+    border-bottom: solid rgb(163, 17, 17);
+    margin-bottom: 0.5em;
+}
+
+figcaption ul{
+    margin-bottom: 1em;
+}
+
+figcaption p{
+    text-align: justify;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: none;
+}
+
+@media (max-width: 780px){
+
+    /* NAV */
+
+    nav{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2em;
+        margin-left: 0.5em;
+    }
+
+    nav a{
+        width: 100%;
+        font-family: garet;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(116, 14, 14);
+        font-size: 1.8em;
+        letter-spacing: -0.05em;
+    }
+
+
+    /* ARTICLE */
+
+    #titulo{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* FIGURE */
+
+    figure img{
+        margin-top: 0;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    figcaption{
+        width: 100%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        font-family: garet;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3em;
+    }
+
+    footer :first-child{
+        width: 20%;
+        margin-bottom: 1em;
+    }
+
+    footer img{
+        width: 100%;
+    }
+}
