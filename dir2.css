@@ -68,11 +68,10 @@ article{
 /* FIGURE */
 
 figure{
-    border: solid black;
+    margin-top: 1em;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     align-content: center;
 }
 
@@ -90,7 +89,7 @@ figcaption{
 figcaption h1{
     font-size: 2em;
     border-bottom: solid rgb(163, 17, 17);
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
 }
 
 figcaption ul{
