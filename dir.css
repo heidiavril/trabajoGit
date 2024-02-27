@@ -19,6 +19,29 @@ h1{
     font-weight: 100;
 }
 
+h2{
+    font-family: garet;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 100;
+    letter-spacing: -0.05em;
+}
+
+h3{
+    font-family: garet;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#extra11{
+    display: none;
+}
+
+
 /* HEADER */
 
 header{
@@ -36,9 +59,9 @@ img{
 /* NAV */
 
 nav{
-    width: 72%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 2em;
     margin-left: 0.5em;
 }
@@ -50,6 +73,7 @@ nav a{
     color: rgb(116, 14, 14);
     font-size: 1.8em;
     letter-spacing: -0.05em;
+    margin-right: 0.8em;
 }
 
 
@@ -71,7 +95,7 @@ section{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 6em;
 }
 
 section h1{
@@ -81,9 +105,185 @@ section h1{
 section div{
     display: flex;
     width: 100%;
-    spa
+    justify-content: space-around;
+    margin-top: 1em;
 }
 
 section div article{
-    width: 33%;
+    width: 30%;
+}
+
+section div article img{
+    width: 100%;
+}
+
+section div article a{
+    text-decoration: none;
+}
+
+section div article h2{
+    margin-top: 1.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 600;
+}
+
+section div article h2:hover{
+    color: rgb(173, 118, 14);
+}
+
+
+/* SECTION ESP */
+
+#esp{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+#esp a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#esp a:hover{
+    background-color: rgb(116, 14, 14);
+}
+
+
+/* BOTON ROJO */
+
+#botonrojo{
+    text-decoration: none;
+    background-color: rgb(116, 14, 14);
+    color: white;
+    font-family: garet;
+    text-align: center;
+    border-radius: 40px;
+    padding: 0.8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+#botonrojo2{
+    display: none;
+}
+
+
+
+@media (max-width: 780px){
+
+    /* NAV */
+
+    nav{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2em;
+        margin-left: 0.5em;
+    }
+
+    nav a{
+        width: 100%;
+        font-family: garet;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(116, 14, 14);
+        font-size: 1.8em;
+        letter-spacing: -0.05em;
+    }
+
+
+    /* FIGURE */
+
+    figure{
+        display: none;
+    }
+
+    #botonrojo{
+        display: none;
+    }
+
+    #botonrojo2{
+        display: block;
+        text-decoration: none;
+        background-color: rgb(116, 14, 14);
+        color: white;
+        font-family: garet;
+        text-align: center;
+        border-radius: 40px;
+        padding: 0.8em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        margin-top: 2em;
+    }
+
+
+    /* SECTION */
+
+    section{
+        display: block;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    section h1{
+        display: none;
+    }
+
+    section div{
+        display: block;
+        width: 100%;
+        justify-content: left;
+        margin-top: 1em;
+    }
+    
+    section div article{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    
+    section div article img{
+        width: 30%;
+    }
+
+    section div article h2{
+        margin-top: 1.5em;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-left: 1em;
+    }
+
+
+    /* SECTION "ESP" */
+
+    #esp{
+        display: none;
+    }
+
+
+    #extra11{
+        display: block;
+        width: 100%;
+        font-family: garet;
+        font-size: 1.5em;
+        background-color: rgb(116, 14, 14);
+        color: white;
+        margin-top: 1em;
+        padding-top: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 0.5em;
+        text-align: center;
+    }
 }
